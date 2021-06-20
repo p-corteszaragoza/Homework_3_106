@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!--header-->
+    <h3>TASK MANAGER</h3>
+    <main class="container-fluid">
+        <section id="list">
+            
+            <div id="pendingList" class="pending-task">
+                
+            </div>
+            <!--<div>
+                <div id="todoContainer" class="todo-list"> </div>
+            </div> -->
+        </section>
+
+        <section id="capture-form" class="flex-container">
+            <div class="form">
+                <div class="control">
+                    <label for="txtTitle" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="txtTitle">
+                </div>
+                <div class="control">
+                    <label for="txtImportant" class="form-label">Important</label>
+                    <i id="iconImportant" class="far fa-star"></i>
+                </div>
+                <div class="control">
+                    <label for="txtDescription" class="form-label">Description</label>
+                    <textarea type="text" class="form-control" id="txtDescription"> </textarea>
+                </div>
+                <div class="control">
+                    <label for="txtCategory" class="form-label">Category</label>
+                    <select id="selCategory" class="form-control">
+                        <option>Personal Time</option>
+                        <option>Chores</option>
+                        <option>Work</option>
+                        <option>Family Activity</option>
+                    </select>
+                </div>
+                <div class="control">
+                    <label for="txtLocation" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="txtLocation">
+                </div>
+                <div class="control">
+                    <label for="txtDueDate" class="form-label">Due Date</label>
+                    <input type="date" class="form-control" id="txtDueDate">
+                </div>
+                <div class="control">
+                    <label for="txtColor" class="form-label">Color</label>
+                    <input type="color" class="form-control" id="txtColor">
+                </div>
+
+                <div class="control">
+                    <button class="btn btn-primary" id="btnSave">Save Task</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/test.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!--
+    Task:
+        title
+        important
+        description
+        category
+        location
+        dueDate
+        color
+-->

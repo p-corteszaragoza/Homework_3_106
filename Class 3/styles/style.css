@@ -1,0 +1,83 @@
+.container-fluid {
+    display: flex;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    flex: 1;
+}
+
+h3 {
+    background: #05059b;
+    color: white;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#list {
+    flex: 4;
+}
+
+#capture-form {
+    flex: 3;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10rem;
+    padding: 0 5rem;
+}
+
+#iconImportant {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#todoContainer{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex: 3;
+    flex-wrap: wrap;
+}
+.card{
+    margin: .5rem .5rem;
+    padding: 0.2rem;
+}
+.card:hover {
+    background-color: #C9DDEA;
+}
+.control{
+    padding: .5rem;
+}
+.task {
+    display: flex;
+}
+
+.task .important{
+    flex: 1;
+}
+.task .description {
+    flex: 5 ;
+}
+.task .due-date {
+    flex: 2;
+}
+
+.task .location {
+    flex: 2;
+}
+.important-container {    
+    background: lightgray;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
